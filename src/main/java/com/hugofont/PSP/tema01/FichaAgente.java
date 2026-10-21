@@ -13,7 +13,7 @@ public class FichaAgente {
         ProcessHandle currentProcess = ProcessHandle.current();
         long pid = currentProcess.pid();
 
-        // PID del padre (si está disponible)
+        // PID del padre (si está disponible)sada
         ProcessHandle parentProcess = currentProcess.parent();
         String pidPadre = parentProcess.isPresent() ? String.valueOf(parentProcess.get().pid()) : "<<no disponible>>";
 
